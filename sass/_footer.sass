@@ -1,0 +1,74 @@
+.footer
+    background: #ECF0F5
+    padding-bottom: 50px
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-top: 50px
+    &__block
+        &-1
+            width: 340px
+    &__text
+        margin-top: 20px
+        font-size: 15px
+        line-height: 24px
+        color: #575C74
+    &__company
+        +Rubic500
+        font-size: 20px
+        line-height: 30px
+        color: #0C122D
+    &__link
+        display: block
+        text-decoration: none
+        font-size: 15px
+        line-height: 30px
+        color: #575C74
+        &-active
+            color: #1B5FC1
+    &__follow
+        +Rubic500
+        font-size: 20px
+        line-height: 30px
+        color: #0C122D
+.follow
+    &__links
+        display: inline-block
+    &__link
+        display: block
+        font-size: 15px
+        line-height: 30px
+        text-decoration: none
+        color: #575C74
+@media (max-width: 768px)
+    .footer
+        &__content
+            justify-content: center
+            padding: 30px
+        &__block
+            &-1
+                margin: 0 100px
+            &-2
+                margin: 20px 50px
+            &-3
+                margin: 20px 50px
+@media (max-width: 550px)
+    .footer
+        &__block
+            &-1
+                margin: 0 20px
+            &-2
+                margin: 20px 30px
+            &-3
+                margin: 20px 30px
+@media (max-width: 400px)
+    .footer
+        &__content
+            justify-content: space-between
+        &__block
+            &-2
+                margin: 20px 0
+            &-3
+                margin: 20px 10px
+            

@@ -1,0 +1,107 @@
+.header
+    padding-top: 5px
+    background: url('../img/Header/header_bg.png') top right no-repeat
+    background-size: contain
+    &__content
+        display: flex
+        justify-content: space-between
+        margin-top: 80px
+    &__left
+        width: 555px
+        padding-top: 150px
+    &__subtitle
+        +Rubic500
+        font-size: 14px
+        line-height: 30px
+        color: #FFB800
+    &__title
+        +Rubic700
+        margin: 30px 0 40px
+        font-size: 72px
+        line-height: 82px
+        color: #0C122D
+    &__text
+        margin-bottom: 54px
+        font-size: 16px
+        line-height: 24px
+        color: #575C74
+    &__btn
+        margin-right: 20px
+        box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19)
+    &__img
+        width: 496px
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin-top: 20px
+    &__link
+        margin-right: 45px
+        font-size: 16px
+        line-height: 30px
+        color: #575C74
+        text-decoration: none
+        &-active
+            color: #0C122D
+        &-lists
+            display: block
+    &__block
+        position: relative
+        display: flex
+        align-items: center
+        &-2
+            display: flex
+            align-items: center
+    &__list
+        position: absolute
+        width: 200px
+        top: 40px
+        padding: 20px
+        background-color: #fff
+        border: 1px solid #D7D8D9
+        border-radius: 10px
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.101961)
+    &__burger
+        display: none
+        margin: 0 20px 0 15px
+        background: none
+        border: none
+        cursor: pointer
+.close
+    display: none
+@media (max-width: 1150px)
+    .header
+        &__left
+            padding-top: 80px
+            width: 450px
+        &__img
+            width: 400px
+@media (max-width: 1000px)
+    .header
+        &__left
+            padding-top: 30px
+            width: 350px
+        &__title
+            font-size: 60px
+            line-height: 72px
+        &__img
+            width: 350px
+    .menu
+        &__link
+            margin-right: 30px
+@media (max-width: 768px)
+    .header
+        background-size: cover
+        &__left
+            padding-top: 20px
+            padding-left: 20px
+        &__right
+            display: none
+    .menu
+        &__links
+            display: none
+        &__burger
+            display: block
+
+//  @media (max-width: 450px)
